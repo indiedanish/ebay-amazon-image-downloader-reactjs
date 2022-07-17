@@ -23,11 +23,22 @@ function Header() {
   useEffect(() => {
     if (didMount.current) {
       axios
-        .post(`http://localhost:4001/`, { link: typed })
+        .post(`https://node-img-downloader.herokuapp.com/`, { link: typed })
         .then((res) => {
+
+          console.log(res.data)
+
+          if (res.data == "ERROR") {
+            setShowErrorMessage(true);
+            setShowSpinner(false);
+          } else {
+          
+
           setImages(res.data);
           setShowSpinner(false);
           setDisableDownloadBtn(false);
+
+        }
         })
         .catch(() => {
           setShowErrorMessage(true);
