@@ -1,0 +1,31 @@
+.app__header {
+
+
+    padding: 150px;
+
+    h1{
+        margin-bottom: 80px;
+        color:   rgb(0, 50, 40);
+    }
+
+    input{
+       border-radius: 5px;
+     
+    }
+
+    .app__header-loader{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .imgbtn-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+      
+    }
+}

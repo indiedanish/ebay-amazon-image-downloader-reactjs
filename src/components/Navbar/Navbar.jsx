@@ -57,6 +57,14 @@ function Navbar() {
 
 
         </div>
+
+     
+            <h8 className="app__devtag" >
+                <a href="https://instagram.com/indiedanish"  >
+                Subscribe To Premium
+                </a>
+            </h8>
+        
     </nav>
   )
 }
