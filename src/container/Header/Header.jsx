@@ -22,7 +22,7 @@ function Header() {
   useEffect(() => {
     if (didMount.current) {
       axios
-        .post(`https://node-img-downloader.herokuapp.com/`, { link: typed })
+        .post(`http://localhost:5000`, { link: typed })
         .then((res) => {
 
           console.log(res.data)
@@ -126,7 +126,7 @@ function Header() {
                   height: "100%",
                 }}
                 onClick={() => {
-                  saveAs(`${item}`, `${index}.jpg`);
+                  saveAs(`${item}`, `${index}.jpeg`);
                 }}
               > 
                 Download
