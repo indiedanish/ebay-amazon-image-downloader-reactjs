@@ -22,7 +22,7 @@ function Header() {
   useEffect(() => {
     if (didMount.current) {
       axios
-        .post(`http://localhost:5000`, { link: typed })
+        .post(`https://node-img-downloader.herokuapp.com/`, { link: typed })
         .then((res) => {
 
           console.log(res.data)
