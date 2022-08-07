@@ -17,7 +17,9 @@ function Header() {
   const [disableDownloadBtn, setDisableDownloadBtn] = useState(true);
   const didMount = useRef(false);
 
+  useEffect(() => {
 
+  });
 
   useEffect(() => {
     if (didMount.current) {
@@ -50,10 +52,10 @@ function Header() {
 
   return (
     <div className="app__header">
-      <h1>Amazon & Ebay Instant Image Downloader</h1>
+      <h1 className="pt-[150px] mb-[50px] md:mb-[80px]   text-4xl pr-4 pl-4 md:pl-20 md:pr-20 " >Amazon & Ebay Instant Image Downloader</h1>
     
-
-      <InputGroup size="lg" className="mb-0">
+<div className=" flex flex-col md:flex-row items-center   align-center justify-center p-4 pb-0  lg:ml-20 lg:mr-20">
+   <InputGroup size="lg" className="flex w-full    ">
         <Form.Control
           aria-label="Large"
           aria-describedby="inputGroup-sizing-sm"
@@ -70,9 +72,12 @@ function Header() {
             setTyped(value.target.value);
           }}
         />
+ </InputGroup>
 
+ <div className="h-2 w-full md:hidden" >  </div>
         <Button
           disabled={disableDownloadBtn}
+          className="flex justify-center  items-center text-center h-12 w-[30%] text-[18px] "
           style={{ background: "linear-gradient(90deg, #9ebd13 0%, #008552 100%)", borderColor: "transparent", zIndex:1}}
           onClick={() => {
             for (var i = 0; i < images.length; i++) {
@@ -80,12 +85,14 @@ function Header() {
             }
           }}
         >
+          
           Download All
         </Button>
-      </InputGroup>
-
+     
+        </div>
+ 
       {showErrorMessage && (
-        <span
+        <span className=" pl-[15px] lg:pl-[100px]"
           style={{
             color: "red",
             marginLeft: "20px",

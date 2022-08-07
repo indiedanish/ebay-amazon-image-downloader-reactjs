@@ -15,7 +15,7 @@ function Navbar() {
            
             <h1>Image Downloader</h1>
         </div>
-        <ul className="app__navbar-links">
+        <ul className=" app__navbar-links ">
             {['Home','About', 'Contact','Products' ].map((item)=>(
                 <li className="app__flex p-text" key={`link-${item}`} >
                     <div/>
@@ -27,17 +27,17 @@ function Navbar() {
             ) }
         </ul>
 
-        <div className="app__navbar-menu">
-            <HiMenuAlt4 onClick={()=>{setToggle(true)}} />
+        {/* <div className="app__navbar-menu ">
+           <HiMenuAlt4 className="text-white" onClick={()=>{setToggle(true)}} />
 
             {toggle && (
-                <motion.div
+                <motion.div 
                 whileInView={{
                     x: [300,0]
                 }}
                 transition={{duration: 0.85, ease: 'easeOut' }}
                 >
-                    <HiX onClick={()=>{setToggle(false)}} />
+                    <HiX  onClick={()=>{setToggle(false)}} />
                  
                     <ul className="app__navbar-links">
                     {['Home','About', 'Contact','Products' ].map((item)=>(
@@ -56,7 +56,7 @@ function Navbar() {
             )}
 
 
-        </div>
+        </div> */}
 
      
             <h8 className="app__devtag" >

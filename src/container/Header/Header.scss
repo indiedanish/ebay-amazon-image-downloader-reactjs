@@ -1,11 +1,12 @@
 .app__header {
 
 
-    padding: 150px;
+   
 
     h1{
-        margin-bottom: 80px;
+        
         color:   rgb(0, 50, 40);
+        
     }
 
     input{
@@ -24,10 +25,17 @@
     }
 
     .imgbtn-container{
+        margin-left: 40px;
+        margin-right: 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
       
     }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
 }
