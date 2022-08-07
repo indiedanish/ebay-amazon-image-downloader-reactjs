@@ -77,7 +77,7 @@ function Header() {
  <div className="h-2 w-full md:hidden" >  </div>
         <Button
           disabled={disableDownloadBtn}
-          className="flex justify-center  items-center text-center h-12 w-[30%] text-[18px] "
+          className="flex justify-center  items-center text-center h-12 w-[60%] xs:w-[30%] sm:w-[30%] md:w-[25%] text-[18px] "
           style={{ background: "linear-gradient(90deg, #9ebd13 0%, #008552 100%)", borderColor: "transparent", zIndex:1}}
           onClick={() => {
             for (var i = 0; i < images.length; i++) {
